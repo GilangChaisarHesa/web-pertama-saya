@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="index.html" method="get">
+        <fieldset class="warna" style="width: 400px; margin: auto;">
+            <h2 class="posisi font1 color">LOGIN</h2>
+            <p class="posisi color font1">Silahkan Login Ke Akun Anda</p>
+            <table>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="Password"></td>
+                </tr>
+                <tr>
+                    <td><label for="konfirmasipassword">Konfirmasi Password:</label></td>
+                    <td><input type="password" id="konfirmasipassword" name="Password"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset class="warna" style="width: 400px; margin: auto;">
+            <h2 class="posisi font1 color">Data Diri</h2>
+            <p class="posisi color font1">Silahkan Masukkan Data Diri Anda</p>
+            <table>
+                <tr>
+                    <td><label for="nama">Nama:</label></td>
+                    <td><input type="text" id="nama" name="nama"></td>
+                </tr>
+                <tr>
+                    <td><label for="jekel">Jenis Kelamin:</label></td>
+                    <td><input type="radio" id="jekel" name="jenis kelamin" value="Laki Laki">Laki Laki <br>
+                    <input type="radio" id="jekel" name="jenis kelamin" value="Perempuan">Perempuan</td>
+                </tr>
+                <tr>
+                    <td><label for="Jurusan">Jurusan:</label></td>
+                    <td><select name="jurusan" id="jurusan">
+                        <option value="s1 teknologi informasi">S1 Teknologi Informasi</option>
+                        <option value="s1 ilmu komputer">S1 Ilmu Komputer</option>
+                        <option value="s2 teknik informatika">S2 Teknik Informatika</option>
+                        <option value="s2 sains data dan kecerdasan buatan">S2 Sains Data Dan Kecerdasan Buatan</option>
+                        <option value="s3 ilmu komputer">S3 Ilmu Komputer</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="peminatan">Peminatan:</label></td>
+                    <td><input type="checkbox" id="peminatan" name="peminatan" value="Cyber Security">Cyber Security<br>
+                    <input type="checkbox" id="peminatan" name="peminatan" value="Software Engineering">Software Engineering<br>
+                    <input type="checkbox" id="peminatan" name="peminatan" value="UI/UX">UI/UX</td>
+                </tr>
+                <tr>
+                    <td><label for="alamat">Alamat:</label></td>
+                    <td><textarea rows="5" cols="30" name="alamat" id="alamat"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+</body>
+</html>
