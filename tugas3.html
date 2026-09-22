@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #kotak {border:2px solid; border-color: black; width: 300px;}
+    </style>
+</head>
+<body>
+    <div id="kotak">
+        <table align="center">
+        <tr><h2 style="text-align: center;">Latihan / Tugas 3</h2></tr>
+        <tr>
+        <td><label for="bil1">Input Bilangan 1</label></td>
+        <td><input type="number" id="bil1"></td>
+        </tr>
+        <tr>
+        <td><label for="bil2">Input Bilangan 2</label></td>
+        <td><input type="number" id="bil2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+    <button onclick="hitung('+')">+</button>
+    <button onclick="hitung('-')">-</button>
+    <button onclick="hitung('*')">×</button>
+    <button onclick="hitung('/')">/</button>
+        </td>
+        </tr>
+        <tr>
+           <td><label for="output">Output</label></td>
+            <td><input type="text" id="output" readonly></td>
+        </tr>
+        </table>
+    </div>
+
+    <script>
+function hitung(operator) {
+    let bil1 = parseFloat(document.getElementById("bil1").value);
+    let bil2 = parseFloat(document.getElementById("bil2").value);
+    let hasil;
+
+    if (operator == "+") {
+        hasil = bil1 + bil2;
+    } else if (operator == "-") {
+        hasil = bil1 - bil2;
+    } else if (operator == "*") {
+        hasil = bil1 * bil2;
+    } else if (operator == "/") {
+        hasil = bil1 / bil2;
+    }
+
+    document.getElementById("output").value = hasil;
+}
+</script>
+</body>
+</html>
